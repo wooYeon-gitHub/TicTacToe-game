@@ -28,19 +28,19 @@ export default class Board extends Component {
       <div>
         <div className='status'>Next Player: X, 0</div>
         <div className='board-row'>
-          {this.renderSqiare(0)}
-          {this.renderSqiare(1)}
-          {this.renderSqiare(2)}
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
         </div>
         <div className='board-row'>
-          {this.renderSqiare(3)}
-          {this.renderSqiare(4)}
-          {this.renderSqiare(5)}
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
         </div>
-        <div className='board-row'>
-          {this.renderSqiare(6)}
-          {this.renderSqiare(7)}
-          {this.renderSqiare(8)}
+        <div className='uoard-row'>
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
         </div>
       </div>
     )
