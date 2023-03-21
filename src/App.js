@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState } from "react";
 import "./App.css"
 import Board from './components/Board';
 
-function App() {
+function App () {
 
   const [history, setHistory] = useState([{squares: Array(9).fill(null) }]);
   const [xIsNext, setXIsNext] = useState(true);
@@ -46,6 +46,7 @@ function App() {
     newSquares[i] = xIsNext? 'X' : 'O';
     setHistory([...history, {squares: newSquares}]);
     setXIsNext(prev =>!prev);
+  }
 
     return (
       <div className='game'>
@@ -59,6 +60,6 @@ function App() {
       </div>
     );
   }
-}
+
 
 export default App;
