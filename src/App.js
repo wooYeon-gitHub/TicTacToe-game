@@ -36,7 +36,7 @@ function App () {
     if (winner) {
       status = 'winner: ' + winner;
     } else {
-      status = `next player'; ${xIsNext ? 'X' : 'O'}`;
+      status = `next player: ${xIsNext ? 'X' : 'O'}`;
     }
 
     const handleClick = (i) => {
